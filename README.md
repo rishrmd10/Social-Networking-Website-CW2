@@ -76,3 +76,6 @@ node server.mjs
 
 This project was developed as part of a university coursework assignment and is intended for educational purposes only.
 ````
+
+## Author
+Developed by Rishon Ramdany

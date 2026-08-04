@@ -35,24 +35,36 @@ This project demonstrates my understanding of full-stack web development, combin
 <img width="820" height="371" alt="image" src="https://github.com/user-attachments/assets/34c525a1-f90e-4877-a040-3120b6b2224b" />
 
 
-## Find People
+### Find People
 
-<img width="1917" height="790" alt="image" src="https://github.com/user-attachments/assets/73b7e748-fd40-4454-a340-081e8bdc9212" />
-
-
-## Followings
-
-<img width="1897" height="945" alt="image" src="https://github.com/user-attachments/assets/36723687-eadf-4e94-9b4e-61b9b6974091" />
+<img width="718" height="322" alt="image" src="https://github.com/user-attachments/assets/90048c55-87e2-49d4-af73-ca3b2e476816" />
 
 
-### Posts Feed
+### Followings
 
-<img width="1880" height="932" alt="image" src="https://github.com/user-attachments/assets/a3871255-9aa3-4a7d-8077-118c57a23350" />
+<img width="712" height="393" alt="image" src="https://github.com/user-attachments/assets/88c47649-2820-41ba-ba21-d75387551d0b" />
 
 
-## My Feed
+### Explore Posts
 
-<img width="1892" height="952" alt="image" src="https://github.com/user-attachments/assets/f1fc0e23-8965-4c41-a9f1-9fd02cad73f6" />
+<img width="587" height="357" alt="image" src="https://github.com/user-attachments/assets/206032b7-c9fb-4e62-9c80-9f1ce2b118b9" />
+
+
+### My Feed
+
+<img width="438" height="402" alt="image" src="https://github.com/user-attachments/assets/cb2b0199-25a9-4a90-b94a-1d886941b9c9" />
+
+
+### Squad
+
+<img width="802" height="2048" alt="image" src="https://github.com/user-attachments/assets/c935212c-586f-4fac-8183-0b135c49c5f9" />
+
+
+### Team Stats
+
+<img width="1654" height="2048" alt="image" src="https://github.com/user-attachments/assets/228187d3-d327-4e0c-a3eb-627528d696c4" />
+
+<img width="1527" height="2048" alt="image" src="https://github.com/user-attachments/assets/45b3aea1-01c8-4d30-bf68-2ffc13f55aea" />
 
 
 ### Friend Requests

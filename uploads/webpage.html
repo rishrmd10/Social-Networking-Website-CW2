@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United Website</title>
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- main header -->
+        <header>
+            <h1>Manchester United Stand</h1>
+            <div id="userStatus"></div>
+        </header>
+
+        <!-- login section -->
+        <section id="loginSection" class="section">
+            <h2>Login</h2>
+            <div class="form-group">
+                <input type="text" id="loginUsername" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button type="button" onclick="login()">Login</button>
+            </div>
+            <p><a href="javascript:void(0)" onclick="showForgotPassword()">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="javascript:void(0)" onclick="showRegistration()">Register here</a></p>
+        </section>
+
+        <!-- forgot password section -->
+        <section id="forgotPasswordSection" class="section hidden">
+            <h2>Reset Password</h2>
+            <div class="form-group">
+                <input type="text" id="resetUsername" placeholder="Enter your username">
+                <input type="email" id="resetEmail" placeholder="Enter your email">
+                <input type="password" id="newPassword" placeholder="Enter new password">
+                <input type="password" id="confirmPassword" placeholder="Confirm new password">
+                <button type="button" onclick="resetPassword()">Reset Password</button>
+            </div>
+            <p>Remember your password? <a href="javascript:void(0)" onclick="showLogin()">Login here</a></p>
+        </section>
+
+        <!-- registration section -->
+        <section id="registrationSection" class="section hidden">
+            <h2>Create Account</h2>
+            <div class="form-group">
+                <input type="text" id="regUsername" placeholder="Choose a username">
+                <input type="email" id="regEmail" placeholder="Your email">
+                <input type="password" id="regPassword" placeholder="Create password">
+                <input type="text" id="regFullName" placeholder="Your full name">
+                <button type="button" onclick="register()">Sign Up</button>
+            </div>
+            <p>Already registered? <a href="javascript:void(0)" onclick="showLogin()">Login here</a></p>
+        </section>
+
+        <!-- main application section (shown after login) -->
+        <section id="appSection" class="section hidden">
+            <div class="app-header">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <img id="headerProfilePic" src="https://via.placeholder.com/50" alt="Profile" 
+                         style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid #FFE600; object-fit: cover;">
+                    <h2>Hey, <span id="welcomeUser"></span>!</h2>
+                </div>
+                <div class="header-buttons">
+                    <button type="button" onclick="showTab('profile')">My Profile</button>
+                    <button type="button" onclick="logout()">Logout</button>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="tabs-navigation">
+                <button type="button" class="tab-btn active" onclick="showTab('share')">Share Something</button>
+                <button type="button" class="tab-btn" onclick="showTab('findPeople')">Find People</button>
+                <button type="button" class="tab-btn" onclick="showTab('following')">Following</button>
+                <button type="button" class="tab-btn" onclick="showTab('explorePosts')">Explore Posts</button>
+                <button type="button" class="tab-btn" onclick="showTab('myFeed')">My Feed</button>
+                <button type="button" class="tab-btn" onclick="showTab('squad')">Squad</button>
+                <button type="button" class="tab-btn" onclick="showTab('stats')">Team Stats</button>
+                <button class="tab-btn" onclick="showTab('friendRequests'); loadFriendRequests();">Friend Requests 📩</button>
+            </div>
+
+            <!-- Tab Content Sections -->
+
+            <!-- Share Something Tab -->
+            <div class="tab-content active" id="shareTab">
+                <div class="post-section">
+                    <h3>Share Something</h3>
+                    <div class="form-group">
+                        <textarea id="postContent" placeholder="What's happening?" rows="4"></textarea>
+                        <!-- file upload for images -->
+                        <div class="file-upload">
+                            <input type="file" id="imageUpload" accept="image/*">
+                            <label for="imageUpload">📷 Add Photo</label>
+                        </div>
+                        <button type="button" onclick="createPost()">Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Find People Tab -->
+            <div class="tab-content" id="findPeopleTab">
+                <div class="search-section">
+                    <h3>Find People</h3>
+                    <div class="form-group">
+                        <input type="text" id="userSearch" placeholder="Search for users...">
+                        <button type="button" onclick="searchUsers()">Search</button>
+                    </div>
+                    <div id="userResults" class="results"></div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="friendRequestsTab">
+    <div class="search-section">
+        <h3>Friend Requests 📩</h3>
+        <p style="color: #666; margin-bottom: 15px;">Accept or reject friend requests from other users. When you accept, you'll both follow each other!</p>
+        <div id="friendRequestsResults" class="results"></div>
+    </div>
+</div>
+
+            <!-- Following Tab -->
+            <div class="tab-content" id="followingTab">
+                <div class="search-section">
+                    <h3>Followings</h3>
+                    <button type="button" onclick="loadFollowing()">Refresh</button>
+                    <div id="followingResults" class="results"></div>
+                </div>
+            </div>
+
+            <!-- Explore Posts Tab -->
+            <div class="tab-content" id="explorePostsTab">
+                <div class="search-section">
+                    <h3>Explore Posts</h3>
+                    <div class="form-group">
+                        <input type="text" id="contentSearch" placeholder="What are you looking for?">
+                        <button type="button" onclick="searchContents()">Search</button>
+                    </div>
+                    <div id="contentResults" class="results"></div>
+                </div>
+            </div>
+
+            <!-- My Feed Tab -->
+            <div class="tab-content" id="myFeedTab">
+                <div class="feed-section">
+                    <h3>Your Feed</h3>
+                    <button type="button" onclick="loadFeed()">Refresh</button>
+                    <div id="feed" class="feed"></div>
+                </div>
+            </div>
+
+            <!-- Squad Tab -->
+            <div class="tab-content" id="squadTab">
+                <div class="third-party-section">
+                    <h3>Manchester United Squad 25/26</h3>
+                    <button type="button" onclick="getSquad()">Load Squad</button>
+                    <div id="squadData"></div>
+                </div>
+            </div>
+
+<!-- Team Stats Tab -->
+<div class="tab-content" id="statsTab">
+    <div class="third-party-section">
+        <h3>Premier League Standings</h3>
+        <button type="button" onclick="getStandings()">Load Standings</button>
+        <div id="standingsData"></div>
+        
+        <h3 style="margin-top: 30px;">Upcoming Fixtures</h3>
+        <button type="button" onclick="getMatches()">Load Fixtures</button>
+        <div id="matchesData"></div>
+    </div>
+</div>
+
+            <!-- My Profile Tab -->
+            <div class="tab-content" id="profileTab">
+                <div class="search-section">
+                    <h3>My Profile</h3>
+                    
+                    <!-- Profile Picture Section -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <img id="profilePic" src="https://via.placeholder.com/150" alt="Profile Picture" 
+                             style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #FFE600; object-fit: cover;">
+                        <div class="form-group" style="margin-top: 15px;">
+                            <input type="file" id="profilePicUpload" accept="image/*" style="display: none;">
+                            <label for="profilePicUpload" style="padding: 10px 20px; background: #DA291C; color: white; border-radius: 5px; cursor: pointer; display: inline-block;">
+                                Change Profile Picture
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Change Password Section -->
+                    <div class="form-group">
+                        <h4 style="color: #DA291C;">Change Password</h4>
+                        <input type="password" id="currentPassword" placeholder="Current Password">
+                        <input type="password" id="newPasswordProfile" placeholder="New Password">
+                        <input type="password" id="confirmPasswordProfile" placeholder="Confirm New Password">
+                        <button type="button" onclick="changePassword()">Update Password</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- notification messages -->
+        <div id="message" class="message hidden"></div>
+    </div>
+
+    <!-- javascript file -->
+    <script src="/js/frontend.js"></script>
+</body>
+</html>

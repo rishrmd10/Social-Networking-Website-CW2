@@ -30,14 +30,29 @@ This project demonstrates my understanding of full-stack web development, combin
 <img width="1920" height="1282" alt="image" src="https://github.com/user-attachments/assets/90424426-488d-4f6e-be89-289d311e0685" />
 
 
+### Create a Post
+
+<img width="1920" height="1282" alt="image" src="https://github.com/user-attachments/assets/5676fcef-74f4-4cd0-a45a-d34f9c4b160b" />
+
+
+## Find People
+
+<img width="1917" height="790" alt="image" src="https://github.com/user-attachments/assets/73b7e748-fd40-4454-a340-081e8bdc9212" />
+
+
+## Followings
+
+<img width="1897" height="945" alt="image" src="https://github.com/user-attachments/assets/36723687-eadf-4e94-9b4e-61b9b6974091" />
+
+
 ### Posts Feed
 
 <img width="1880" height="932" alt="image" src="https://github.com/user-attachments/assets/a3871255-9aa3-4a7d-8077-118c57a23350" />
 
 
-### Create a Post
+## My Feed
 
-<img width="1880" height="932" alt="image" src="https://github.com/user-attachments/assets/cf5a4e27-e077-4b71-b574-7b6b7095b785" />
+<img width="1892" height="952" alt="image" src="https://github.com/user-attachments/assets/f1fc0e23-8965-4c41-a9f1-9fd02cad73f6" />
 
 
 ### Friend Requests
@@ -47,7 +62,7 @@ This project demonstrates my understanding of full-stack web development, combin
 
 ### User Profile
 
-<img width="1880" height="932" alt="image" src="https://github.com/user-attachments/assets/e44e0b7b-cf74-4b4b-8975-70cc493b6f99" />
+<img width="1920" height="1282" alt="image" src="https://github.com/user-attachments/assets/e00b06cd-c620-49ae-bd1a-7b453c02c743" />
 
 
 ---

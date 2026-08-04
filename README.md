@@ -32,7 +32,7 @@ This project demonstrates my understanding of full-stack web development, combin
 
 ### Create a Post
 
-<img width="1913" height="922" alt="image" src="https://github.com/user-attachments/assets/c9ca2613-908f-4707-8281-636ee29f16d0" />
+<img width="880" height="421" alt="image" src="https://github.com/user-attachments/assets/a1a71778-b805-46c9-be39-8edee207bacc" />
 
 
 ## Find People

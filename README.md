@@ -10,21 +10,45 @@ This project demonstrates my understanding of full-stack web development, combin
 
 > *Screenshots of the application are shown below.*
 
+### Register Page
+
+<img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/00585a5f-f680-4d7d-b6f3-1795dda18665" />
+
+
+### Login Page
+
+<img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/5c49aa7a-4ea8-4fb8-a868-366ab7da3425" />
+
+
+### Reset Password
+
+<img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/fc4c8379-61db-4b25-80a9-ac7bb98f392c" />
+
+
 ### Home Page
 
-![Home Page](screenshots/homepage.png)
+<img width="1920" height="1282" alt="image" src="https://github.com/user-attachments/assets/90424426-488d-4f6e-be89-289d311e0685" />
+
 
 ### Posts Feed
 
-![Posts Feed](screenshots/posts.png)
+<img width="1880" height="932" alt="image" src="https://github.com/user-attachments/assets/a3871255-9aa3-4a7d-8077-118c57a23350" />
+
 
 ### Create a Post
 
-![Create a Post](screenshots/create-post.png)
+<img width="1880" height="932" alt="image" src="https://github.com/user-attachments/assets/cf5a4e27-e077-4b71-b574-7b6b7095b785" />
+
+
+### Friend Requests
+
+<img width="1547" height="695" alt="image" src="https://github.com/user-attachments/assets/5c64b53e-789e-4842-8bd6-059db67e622a" />
+
 
 ### User Profile
 
-![User Profile](screenshots/profile.png)
+<img width="1880" height="932" alt="image" src="https://github.com/user-attachments/assets/e44e0b7b-cf74-4b4b-8975-70cc493b6f99" />
+
 
 ---
 

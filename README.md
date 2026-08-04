@@ -93,8 +93,8 @@ This project demonstrates my understanding of full-stack web development, combin
 ## Technologies Used
 
 ### Frontend
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ### Backend
